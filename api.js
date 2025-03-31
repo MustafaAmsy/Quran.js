@@ -4,4 +4,4 @@ let data;
 let d = await fetch('https://api.alquran.cloud/v1/surah/9');
 return await d.json();
 }
-(async() => console.log(await ver().ayahs))()
+(async() => console.log(await ver().data.ayahs[0]))()
