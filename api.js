@@ -2,6 +2,7 @@ async function ver() {
 //const fetch = require('node-fetch');
 let data;
 let d = await fetch('https://api.alquran.cloud/v1/surah/9');
-return await d.json();
+ await d.json();
+return await d.data;
 }
 (async() => console.log(await ver()))()
