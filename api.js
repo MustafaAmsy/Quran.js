@@ -3,6 +3,6 @@ async function ver() {
 let data;
 let d = await fetch('https://api.alquran.cloud/v1/surah/9');
  await d.json();
-return await d.data;
+return d.data;
 }
 (async() => console.log(await ver()))()
