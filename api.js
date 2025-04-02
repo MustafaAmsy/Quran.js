@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Define file path
-const filePath = path.join(__dirname, 'data', 'quran.json');
+const filePath = path.join(__dirname, 'data', 'data.json');
 
 // Read JSON file
 const rawData = fs.readFileSync(filePath, 'utf-8');
