@@ -1,7 +1,9 @@
+let dataJson = [];
 async function ver() {
-    let response = await fetch('https://api.alquran.cloud/v1/surah/9');
+  for(let i = 1; 114 >= i;i++) {
+    let response = await fetch('https://api.alquran.cloud/v1/surah/'+i);
     let data = await response.json();
-    return data.data.name; // data يحتوي على معلومات السورة
+  } 
 }
 
 (async () => {
