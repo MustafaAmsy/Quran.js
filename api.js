@@ -10,6 +10,11 @@ async function ver() {
      preBasmala = false
    }
    }
+   let verses = [];
+   for(let e = 1; d.numberofAyahs >= e; e++) {
+     const verseData = d.ayahs.find(a => a.numberInSurah === e);
+     verses.push({ verseNumber: verseData.number, number: verseData.numberInSurah, juz: verseData.juz, page: verseData.page, })
+   }
     dataJson.push({ number: d.number, name: { arabic: d.name, english: { name: d.englishName, translation: d.englishNameTranslation }}, revelation: { arabic: rev[d.revelationType], english: d.revelationType }, versesCount: d.numberOfAyahs, preBasmala: preBasmala, })
   };
   return dataJson[0];
