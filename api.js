@@ -1,11 +1,13 @@
 let dataJson = [];
-let rev = { Meccan: "", Median""
+let rev = { Meccan: "مكية", Medinan: "مدنية"};
 async function ver() {
   for(let i = 1; 114 >= i;i++) {
     let response = await fetch('https://api.alquran.cloud/v1/surah/'+i);
     let data = await response.json();
     let d = data.data;
-    dataJson.push({ name: { arabic: d.name, english: { name: d.englishName, translation: d.englishNameTranslation }}, revelation: })
+   let preBasmala = false;
+   if
+    dataJson.push({ number: d.number, name: { arabic: d.name, english: { name: d.englishName, translation: d.englishNameTranslation }}, revelation: { arabic: rev[d.revelationType], english: d.revelationType }, versesCount: d.numberOfAyahs })
   };
   return dataJson[0];
 }
