@@ -24,7 +24,7 @@ return dataJson;
 
 (async () => {
     let dataResponse = await ver();
-    const dirPath = path.json(__dirname, 'data');
+    const dirPath = path.join(__dirname, 'data');
     const filePath = path.join(dirPath, 'data.json')
     let storedData = JSON.stringify(dataResponse, null, 2);
     fs.writeFileSync(filePath, storedData, 'utf-8');
