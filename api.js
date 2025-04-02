@@ -1,5 +1,6 @@
 let dataJson = [];
 const fs = require('fs');
+const path = require('path');
 let rev = { Meccan: "مكية", Medinan: "مدنية"};
 async function ver() {
   for(let i = 1; 114 >= i;i++) {
