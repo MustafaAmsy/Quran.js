@@ -6,7 +6,7 @@ async function ver() {
     let data = await response.json();
     let d = data.data;
    let preBasmala = false;
-    dataJson.push({ number: d.number, name: { arabic: d.name, english: { name: d.englishName, translation: d.englishNameTranslation }}, revelation: { arabic: rev[d.revelationType], english: d.revelationType }, versesCount: d.numberOfAyahs })
+    dataJson.push({ number: d.number, name: { arabic: d.name, english: { name: d.englishName, translation: d.englishNameTranslation }}, revelation: { arabic: rev[d.revelationType], english: d.revelationType }, versesCount: d.numberOfAyahs, verses: [{ }] })
   };
   return dataJson[0];
 }
