@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/MustafaAmsy/Quran.js/issues"
   },
-  "homepage": "https://github.com/MustafaAmsy/Quran.js#readme"
+  "homepage": "https://github.com/MustafaAmsy/Quran.js#readme",
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
 }
