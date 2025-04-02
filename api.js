@@ -1,4 +1,5 @@
 let dataJson = [];
+const fs = require('fs');
 let rev = { Meccan: "مكية", Medinan: "مدنية"};
 async function ver() {
   for(let i = 1; 114 >= i;i++) {
@@ -21,6 +22,7 @@ return dataJson;
 }
 
 (async () => {
-    
-    console.log(await ver());
+    let dataResponse = await ver();
+    let storedData = JSON.stringify(dataResponse, null, 2);
+    fs.writeFileSync()
 })();
